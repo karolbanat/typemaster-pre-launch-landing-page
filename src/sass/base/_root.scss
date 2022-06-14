@@ -1,0 +1,37 @@
+:root {
+	// colors
+	--clr-primary-400: hsl(221, 23%, 58%);
+	--clr-primary-700: hsl(220, 50%, 17%);
+
+	--clr-accent-400: hsl(198, 28%, 93%);
+	--clr-accent-700: hsl(22, 89%, 52%);
+	--clr-accent-700-light: hsl(22, 100%, 69%);
+
+	--clr-white: hsl(0, 0%, 100%);
+
+	// font families
+	--ff-primary: 'Barlow', sans-serif;
+
+	// font sizes
+	--fz-regular: 1.6rem;
+	--fz-medium: 2.4rem;
+	--fz-large: 3.2rem;
+	--fz-large-xl: 4.8rem; // 5.6rem larger screens
+
+	// font weight
+	--fw-400: 500;
+	--fw-600: 700;
+	--fw-700: 900;
+
+	// stage
+	--clr-body: var(--clr-primary-400);
+
+	--clr-heading: var(--clr-primary-700);
+
+	--clr-button: var(--clr-primary-400);
+	--bg-button: var(--clr-accent-400);
+
+	--bg-header-decoration: var(--clr-primary-400);
+
+	--bg-image-highlighted: var(--clr-accent-700);
+}
