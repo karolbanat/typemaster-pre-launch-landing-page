@@ -1,0 +1,38 @@
+.header {
+	overflow: hidden;
+
+	&__content {
+		padding-inline: var(--spacing-2);
+	}
+
+	&__heading {
+		margin-bottom: var(--spacing-2);
+		font-size: var(--fz-large-xl);
+
+		@media (min-width: $bp-medium) {
+			--spacing-2: 2.8rem;
+		}
+
+		@media (min-width: $bp-large-xl) {
+			--spacing-2: 1.6rem;
+			--fz-large-xl: 5.6rem;
+		}
+	}
+
+	&__text {
+		margin-bottom: var(--spacing-3);
+		font-size: var(--fz-regular);
+
+		@media (min-width: $bp-medium) {
+			--spacing-3: 4.2rem;
+		}
+
+		@media (min-width: $bp-large-xl) {
+			--fz-regular: 1.8rem;
+		}
+	}
+
+	&__image {
+		margin-left: var(--spacing-2);
+	}
+}
