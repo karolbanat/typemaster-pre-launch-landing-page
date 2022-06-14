@@ -24,17 +24,19 @@
 	--fw-700: 900;
 
 	// border radius
-	--br-sm: 0.8rem;
-	--br-md: 1.6rem;
-	--br-lg: 2rem;
+	--borr-sm: 0.8rem;
+	--borr-md: 1.6rem;
+	--borr-lg: 2rem;
+
+	// spacing
+	--spacing-2: 2.4rem;
+	--spacing-4: 4rem;
+	--spacing-6: 6.4rem;
 
 	// stage
 	--clr-body: var(--clr-primary-400);
 
 	--clr-heading: var(--clr-primary-700);
-
-	--clr-button: var(--clr-primary-400);
-	--bg-button: var(--clr-accent-400);
 
 	--bg-header-decoration: var(--clr-primary-400);
 

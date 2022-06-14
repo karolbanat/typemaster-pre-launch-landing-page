@@ -1,0 +1,26 @@
+.btn {
+	padding: 1.4rem;
+
+	font-weight: var(--fw-600);
+	text-transform: uppercase;
+
+	color: var(--clr-button);
+	background-color: var(--bg-button);
+
+	border: none;
+	border-radius: var(--borr-sm);
+
+	@media (min-width: $bp-medium) {
+		padding: 2rem 2.6rem;
+	}
+
+	&--primary {
+		--clr-button: var(--clr-primary-700);
+		--bg-button: var(--clr-accent-400);
+	}
+
+	&--accent {
+		--clr-button: var(--clr-white);
+		--bg-button: var(--clr-accent-700);
+	}
+}

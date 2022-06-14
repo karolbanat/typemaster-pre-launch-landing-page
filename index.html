@@ -15,35 +15,38 @@
 </head>
 
 <body>
-	<nav class="navigation">
-		<img src="./dist/assets/shared/logo.svg" alt="Typemaster logo." class="logo">
-		<button class="btn btn--primary">Pre-order now</button>
-	</nav>
+
 
 	<header class="header" aria-labelledby="main-heading">
-		<div class="container header__body">
-			<div class="header__content">
-				<h1 id="main-heading" class="header__heading">Typemaster keyboard</h1>
-				<p class="header__text">Improve your productivity and gaming without breaking the bank. Upgrade to a
-					high quality
-					mechanical typing experience.</p>
-				<div class="preorder">
-					<button class="btn btn--accent">Pre-order now</button>
-					<p class="preorder__release">Release on 5/27</p>
+		<div class="container">
+			<nav class="navigation">
+				<img src="./dist/assets/shared/logo.svg" alt="Typemaster logo." class="logo">
+				<button class="btn btn--primary">Pre-order now</button>
+			</nav>
+			<div class="header__body">
+				<div class="header__content">
+					<h1 id="main-heading" class="header__heading">Typemaster keyboard</h1>
+					<p class="header__text">Improve your productivity and gaming without breaking the bank. Upgrade to a
+						high quality
+						mechanical typing experience.</p>
+					<div class="preorder">
+						<button class="btn btn--accent">Pre-order now</button>
+						<p class="preorder__release">Release on 5/27</p>
+					</div>
 				</div>
+				<picture>
+					<source media="(min-width: 1200px)" srcset="./dist/assets/desktop/image-keyboard.jpg">
+					<source media="(min-width: 768px)" srcset="./dist/assets/tablet/image-keyboard.jpg">
+					<img src="./dist/assets/mobile/image-keyboard.jpg" alt="Typemaster keyboard preview."
+						class="image image--rounded header__image">
+				</picture>
 			</div>
-			<picture>
-				<source media="(min-width: 1200px)" srcset="./dist/assets/desktop/image-keyboard.jpg">
-				<source media="(min-width: 768px)" srcset="./dist/assets/tablet/image-keyboard.jpg">
-				<img src="./dist/assets/mobile/image-keyboard.jpg" alt="Typemaster keyboard preview."
-					class="image image--rounded header__image">
-			</picture>
 		</div>
 	</header>
 
 	<main>
-		<section class="about" aria-labelledby="about-heading">
-			<div class="container about__container">
+		<div class="container">
+			<section class="about" aria-labelledby="about-heading">
 				<div class="about__gallery">
 					<picture class="about__image about__image--highlighted">
 						<source media="(min-width: 1200px)" srcset="./dist/assets/desktop/image-phone-and-keyboard.jpg">
@@ -63,9 +66,9 @@
 					<p>The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety
 						of switches and keycaps, along with reliable wireless connectivity.</p>
 				</div>
-			</div>
-		</section>
- 
+			</section>
+		</div>
+
 		<div class="container">
 			<section class="features" aria-label="Typemaster keyboard features">
 				<div class="card">
