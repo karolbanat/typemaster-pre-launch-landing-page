@@ -10,6 +10,9 @@
 	border: none;
 	border-radius: var(--borr-sm);
 
+	cursor: pointer;
+	transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+
 	@media (min-width: $bp-medium) {
 		padding: 2rem 2.6rem;
 	}
@@ -17,10 +20,23 @@
 	&--primary {
 		--clr-button: var(--clr-primary-700);
 		--bg-button: var(--clr-accent-400);
+
+		@media (min-width: $bp-large) {
+			&:hover {
+				--clr-button: var(--clr-white);
+				--bg-button: var(--clr-primary-700);
+			}
+		}
 	}
 
 	&--accent {
 		--clr-button: var(--clr-white);
 		--bg-button: var(--clr-accent-700);
+
+		@media (min-width: $bp-large) {
+			&:hover {
+				--bg-button: var(--clr-accent-700-light);
+			}
+		}
 	}
 }
