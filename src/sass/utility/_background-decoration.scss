@@ -1,0 +1,25 @@
+.background-decoration {
+	@media (max-width: $bp-large-xl) {
+		&__decoration {
+			display: none;
+		}
+	}
+
+	@media (min-width: $bp-large-xl) {
+		position: relative;
+
+		&__decoration {
+			position: absolute;
+
+			&--top-right {
+				top: 0;
+				right: calc(3rem - var(--spacing-10));
+			}
+
+			&--bottom-left {
+				bottom: 0;
+				left: calc(3rem - var(--spacing-10));
+			}
+		}
+	}
+}
