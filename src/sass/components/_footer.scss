@@ -1,0 +1,19 @@
+.footer {
+	--pd-block: 5.4rem;
+
+	padding-block: var(--pd-block);
+	padding-inline: var(--spacing-2);
+	text-align: center;
+
+	@media (min-width: $bp-medium) {
+		--pd-block: 4.6rem;
+	}
+
+	@media (min-width: $bp-large-xl) {
+		--pd-block: 4.2rem;
+	}
+
+	span {
+		font-weight: var(--fw-600);
+	}
+}

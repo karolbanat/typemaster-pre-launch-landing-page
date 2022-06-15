@@ -1,36 +1,41 @@
 .header {
-	margin-bottom: var(--spacing-2);
+	--m-bottom: var(--spacing-2);
+
+	margin-bottom: var(--m-bottom);
 	overflow: hidden;
 
 	@media (min-width: $bp-medium) {
-		margin-bottom: var(--spacing-4);
+		--m-bottom: var(--spacing-4);
 	}
 
 	@media (min-width: $bp-large-xl) {
-		margin-bottom: 3rem;
+		--m-bottom: 3rem;
 	}
 
 	&__body {
+		--gap: var(--spacing-6);
+
 		display: grid;
-		gap: var(--spacing-6);
+		gap: var(--gap);
 
 		@media (min-width: $bp-medium) {
-			grid-template-columns: repeat(2, 1fr);
-			gap: 0;
+			--gap: 0;
+			--pd-inline: var(--spacing-4);
 
-			padding-left: var(--spacing-4);
+			grid-template-columns: repeat(2, 1fr);
+
+			padding-left: var(--pd-inline);
 		}
 
 		@media (min-width: $bp-large) {
-			--spacing-4: 8rem;
-
-			grid-template-columns: repeat(2, 1fr);
-			gap: 0;
+			--pd-inline: 8rem;
 		}
 
 		@media (min-width: $bp-large-xl) {
+			--pd-inline: var(--spacing-10);
+
 			grid-template-columns: repeat(12, 1fr);
-			padding-inline: var(--spacing-10);
+			padding-inline: var(--pd-inline);
 		}
 	}
 
@@ -50,25 +55,28 @@
 	}
 
 	&__heading {
-		margin-bottom: var(--spacing-2);
+		--m-bottom-h: var(--spacing-2);
+
+		margin-bottom: var(--m-bottom-h);
 		font-size: var(--fz-large-xl);
 
 		@media (min-width: $bp-medium) {
-			--spacing-2: 2.8rem;
+			--m-bottom-h: 2.8rem;
 		}
 
 		@media (min-width: $bp-large-xl) {
-			--spacing-2: 1.6rem;
+			--m-bottom-h: 1.6rem;
 			--fz-large-xl: 5.6rem;
 		}
 	}
 
 	&__text {
-		margin-bottom: var(--spacing-3);
+		--m-bottom-text: var(--spacing-3);
+		margin-bottom: var(--m-bottom);
 		font-size: var(--fz-regular);
 
 		@media (min-width: $bp-medium) {
-			--spacing-3: 4.2rem;
+			--m-bottom-text: 4.2rem;
 		}
 
 		@media (min-width: $bp-large-xl) {

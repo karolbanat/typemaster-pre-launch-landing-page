@@ -1,23 +1,27 @@
 .navigation {
+	--pd-top: var(--spacing-4);
+	--pd-btm: var(--spacing-6);
+	--pd-inline: var(--spacing-2);
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 
-	padding-top: var(--spacing-4);
-	padding-inline: var(--spacing-2);
-	margin-bottom: var(--spacing-6);
+	padding-top: var(--pd-top);
+	padding-inline: var(--pd-inline);
+	margin-bottom: var(--pd-btm);
 
 	@media (min-width: $bp-medium) {
-		--spacing-4: 5.5rem;
-		--spacing-2: 4rem;
+		--pd-top: 5.5rem;
+		--pd-inline: 4rem;
 	}
 
 	@media (min-width: $bp-large) {
-		--spacing-2: 8rem;
+		--pd-inline: 8rem;
 	}
 
 	@media (min-width: $bp-large-xl) {
-		--spacing-2: 16.5rem;
-		--spacing-6: 8.4rem;
+		--pd-inline: 16.5rem;
+		--pd-btm: 8.4rem;
 	}
 }

@@ -1,23 +1,27 @@
 .gallery {
+	--gap: var(--spacing-2);
+
 	display: grid;
 	grid-template-columns: 4fr 8fr;
-	gap: var(--spacing-2);
+	gap: var(--gap);
 
 	@media (max-width: $bp-medium) {
 		transform: translateX(-2.4rem);
 	}
 
 	@media (min-width: $bp-medium) {
-		--spacing-2: 3rem;
-		padding-inline: var(--spacing-4);
+		--gap: 3rem;
+		--pd-inline: var(--spacing-4);
+
+		padding-inline: var(--pd-inline);
 	}
 
 	@media (min-width: $bp-large) {
-		--spacing-4: 8rem;
+		--pd-inline: 8rem;
 	}
 
 	@media (min-width: $bp-large-xl) {
-		padding-inline: 0;
+		--pd-inline: 0;
 	}
 
 	&__image {

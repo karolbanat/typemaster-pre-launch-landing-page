@@ -21,15 +21,17 @@
 	}
 
 	&__header {
+		--pd-inline: var(--spacing-2);
+
 		padding-block: var(--spacing-8);
-		padding-inline: var(--spacing-2);
+		padding-inline: var(--pd-inline);
 
 		@media (max-width: $bp-medium) {
 			text-align: center;
 		}
 
 		@media (min-width: $bp-medium) {
-			padding-inline: var(--spacing-4);
+			--pd-inline: var(--spacing-4);
 		}
 
 		@media (min-width: $bp-medium) and (max-width: $bp-large-xl) {
@@ -39,11 +41,11 @@
 		}
 
 		@media (min-width: $bp-large) {
-			padding-inline: 8rem;
+			--pd-inline: var(--spacing-9);
 		}
 
 		@media (min-width: $bp-large-xl) {
-			padding-inline: 0;
+			--pd-inline: 0;
 		}
 	}
 
@@ -54,6 +56,7 @@
 		@media (min-width: $bp-medium) and (max-width: $bp-large-xl) {
 			grid-column: 1 / span 4;
 			margin-bottom: 0;
+
 			font-size: var(--fz-large);
 		}
 	}
