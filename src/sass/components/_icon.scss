@@ -1,0 +1,12 @@
+.icon {
+	display: grid;
+	place-content: center;
+
+	margin-bottom: 5rem;
+	width: 6.5rem;
+	aspect-ratio: 1;
+
+	background-color: var(--bg-icon);
+
+	border-radius: var(--borr-md);
+}

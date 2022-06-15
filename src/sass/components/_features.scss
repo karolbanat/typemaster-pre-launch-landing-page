@@ -1,0 +1,46 @@
+.features {
+	--gap: var(--spacing-6);
+	--pd-inline: var(--spacing-2);
+	--pd-top: var(--spacing-3);
+	--pd-btm: 5rem;
+
+	display: grid;
+	gap: var(--gap);
+
+	padding-inline: var(--pd-inline);
+	padding-block: var(--pd-top) var(--pd-btm);
+
+	@media (min-width: $bp-medium) {
+		--gap: 1rem;
+		--pd-inline: var(--spacing-4);
+		--pd-top: 6rem;
+		--pd-btm: 10rem;
+
+		grid-template-columns: repeat(12, 1fr);
+		row-gap: 7.5rem;
+	}
+
+	@media (min-width: $bp-medium) and (max-width: $bp-large-xl) {
+		& > *:nth-child(2n + 1) {
+			grid-column: 1 / span 5;
+		}
+
+		& > *:nth-child(2n) {
+			grid-column: 7 / span 5;
+		}
+	}
+
+	@media (min-width: $bp-large) {
+		--pd-inline: var(--spacing-9);
+	}
+
+	@media (min-width: $bp-large-xl) {
+		--gap: 3rem;
+		--pd-inline: var(--spacing-10);
+		--pd-top: var(--spacing-10);
+
+		& > * {
+			grid-column: span 3;
+		}
+	}
+}
