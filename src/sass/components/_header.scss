@@ -1,5 +1,14 @@
 .header {
+	margin-bottom: var(--spacing-2);
 	overflow: hidden;
+
+	@media (min-width: $bp-medium) {
+		margin-bottom: var(--spacing-4);
+	}
+
+	@media (min-width: $bp-large-xl) {
+		margin-bottom: 3rem;
+	}
 
 	&__body {
 		display: grid;
@@ -67,15 +76,15 @@
 		}
 	}
 
-	&__picture {
+	&__image {
 		@media (min-width: $bp-large-xl) {
 			grid-column: 7 / span 6;
 		}
-	}
 
-	&__image {
-		@media (max-width: $bp-large-xl) {
-			margin-left: var(--spacing-2);
+		img {
+			@media (max-width: $bp-large-xl) {
+				margin-left: var(--spacing-2);
+			}
 		}
 	}
 }
